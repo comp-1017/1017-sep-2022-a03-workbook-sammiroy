@@ -1,0 +1,13 @@
+h1 {
+    color: red;
+}
+p {
+    background-color: brown;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+aside {
+    font-style: italic;
+}
+span {
+    font-weight: bold;
+}
