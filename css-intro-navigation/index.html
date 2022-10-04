@@ -18,7 +18,7 @@
         </nav>
     </header>
     <main>
-        <section>
+        <aside>
             <h2>Create navigational links within a website</h2>
             <p>
                 There are several techniques to navigate within a website. The semantic tag for navigation is the &lt;nav&gt; tag. You can navigate through your web site by using relative addressing. For example we will user the unordered list tag. (&lt;ul&gt;)
@@ -30,6 +30,37 @@
                 <li>Going to a specific place on the current page (on page navigation)</li>
             </ul>
             <p>Navigational menus are placed in your &lt;header&gt; semantic area. They may also be placed in your &lt;footer&gt; area as a sitemap. The nav tag like other semantic tags should have a &lt;hx&gt; tag. HOWEVER this header os optional. If you omit the header tag you will receive an document outliner error: Untitled Section. until you are show how to avoid this error message, it will be acceptable on your document.</p>
+        </aside>
+        <section>
+            <h2>CSS Coding Styles Summary</h2>
+            <table border = "1">
+                <tbody>
+                    <tr>
+                        <td>Browser Defaults (no css)</td>
+                        <td width="400px"> You have no control over the styling</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Inline</td>
+                        <td>This is for a single specific element (tag) instance. Your css will be specified in a parameter within the element. This css affects ONLY the element tag that contains the specification.</td>
+                        <td>style="rule"; [rule; ...]</td>
+                        <td>&lt;p style="color:red; width:50px;"&gt; ... &lt;p&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>Embedded</td>
+                        <td>The specification of css as embedded happens in your &lt;head&gt; area. This css affects all similar elements on the webpage where the css is coded.</td>
+                        <td>&lt;style&gt;<br>selector{rule; [rule; ...]} <br>[selector{rule; [rule; ...]}]<br>&lt;/style&gt;</td>
+                        <td>&lt;style&gt;<br>p {color:red; width:50px;}<br> h1 {font-style:italic}<br>&lt;/style&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>Link (stylesheet)</td>
+                        <td>This is the preferred method of doing css. you place your css in a separate physical file. This file can then be used on ANY webpage in your website. The link to this file will be done in your &lt;head&gt; area. The css in this file is similar to embedded EXCEPT there is no style tag.</td>
+                        <td>selector{rule; [rule; ...]} <br>[selector{rule; [rule; ...]}]</td>
+                        <td>p {color:red; width:50px;}<br> h1 {font-style:italic}</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
     <footer>
