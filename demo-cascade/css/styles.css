@@ -1,0 +1,17 @@
+
+ul{
+    background-color: #ddd;
+}
+
+footer {
+    background-color: #333;
+    color: yellow;
+}
+
+/*
+Make a specific class with your css rule
+*/
+
+/* .nav-background{
+    background-color: #ddd;
+} */
