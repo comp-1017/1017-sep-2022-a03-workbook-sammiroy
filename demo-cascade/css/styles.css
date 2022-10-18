@@ -1,8 +1,3 @@
-
-ul{
-    background-color: #ddd;
-}
-
 footer {
     background-color: #333;
     color: yellow;
@@ -15,3 +10,97 @@ Make a specific class with your css rule
 /* .nav-background{
     background-color: #ddd;
 } */
+
+/*
+Descendant selector
+*/
+ul {
+    background-color: firebrick;
+}
+
+nav ul{
+    background-color: #ddd;
+}
+
+/*
+Specificity:
+it is a value assigned to the selector, depending on meeting different criteria
+
+selector type:
+    element selectors get a value of 1
+    class selectors get a value of 10
+    id selector get a value of 100
+SPECIAL NOTE: ALL IN-LINE STYLING GETS A VALUE OF 1000
+Specificty Decisions are based on the VALUE of the selector
+
+IF the specifity of conflicting rules is the same, then "The last coded rule wins"
+*/
+
+footer, footer a{
+    color:white;
+}
+/*
+first set element select li to a border-bottom
+
+concern: BOTH nav & footer li were affected
+
+solutions:
+a) use a decendant selector (nav li > li)
+b) use a class selector as a targeted class
+*/
+.li-border{
+    border-bottom: 1px solid black;
+}
+
+nav ul li{
+    border-bottom: 5px dotted black;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+}
+
+/*
+Classes: 
+Syntax is .user-name { rules }
+you are NOT to use the element name
+username must be meaningful and may include the element name
+classes can be attached to any element
+classes are independent of an element
+on html page, to use: <element class="username">
+
+types: user (targeted) class
+    psuedo class, these are attached to elements
+
+
+
+a:link          unused link
+a:hover         used when your cursor hovers over the anchor tag
+a:visited       used when the achor tag has been clicked previously
+a:active        used when you are actually clicking the anchor tag link
+*/
+
+
+
+nav ul li a:visited{
+    color: green;
+}
+nav ul li a:hover{
+    color: blue;
+    font-weight: bold;
+    font-size: larger;
+}
+nav ul li a:active{
+    color: red;
+}
+
+
+ul li{
+    list-style-type: none;
+    padding: 0px;
+}
+
+footer ul li{
+    padding: 10px;
+}
