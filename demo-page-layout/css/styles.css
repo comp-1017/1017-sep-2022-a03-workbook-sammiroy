@@ -7,4 +7,61 @@ body {
 	width:960px;
 	font-size: 100%;
 	line-height: 1.5;
+	background-color: #fff;
+}
+
+/*
+Typography (module 3)
+affects the styling of text
+*/
+
+h1,
+h2{
+	padding:10px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color:#747474;
+}
+
+/*
+Layout
+These rules will affect the physical positioning of 
+*/
+
+nav{
+	margin-top: 24px;
+	height: 48px;
+	background-color: #ddd;
+}
+
+header,
+main{
+	height:480px;
+	margin-top: 24px;
+	background-color: #ddd;
+}
+
+main{
+	height: 800px;
+}
+
+footer{
+	height:150px;
+	margin:24px 0 48px 0;
+	background-color: #ddd;
+}
+
+
+/*
+Box model
+	page width = left margin + left border + left padding + content width + right padding + right border + right margin
+*/
+main section{
+	border: 2px solid black;
+	margin: 30px;
+	height: 200px;
+	background-color: #fff;
+	width: 896px;
 }
