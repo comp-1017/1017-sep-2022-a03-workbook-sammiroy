@@ -8,7 +8,90 @@ body {
     margin: 0 auto;
     font-size: 100%;
     line-height: 1.5
+    
 }
+
+.clearfix {
+    zoom: 1;
+}
+/*
+    Default display of elements on your page is called "stacked"
+
+    to get your element on the same line, we use something called flexbox
+    to invoke flexbox use the rule::after
+        diplay: flex;
+
+    flexbox attempts to place all elements within its "immediate specified container" are  
+        on the same line
+
+    Immediate - the next level of elements
+
+    flexbox will automatically adjust measurements to get all elements to
+        appear on the same line REGARLESS of the physical width set for an element
+
+    rule: flex-wrap: wrap;
+
+    this will place as many elements as possible on a single row 
+        without adjusting the measurements of your elements
+    Any leftover elements will wrap to the following line until
+        all elements have been displayed
+    
+        Warning: flex-wrap affects a flex display area. Without the display: flex;
+            rule: flex-wrap; is meaningless
+*/
+main {
+    border: 30px;
+    background-color:lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: lightgrey;
+    display: flex;
+}
+
+/***
+wihtout text, these boxes have no dimensions. we need to manually input it 
+Width of each box is set to fit the final given image  PAGE WIDTH = 960 
+
+Box width = (960 - 3*margin) / 2
+margin = 10 px 
+box width = 930 / 2 = 465 
+
+***/
+
+main > div {
+    height:200px;
+    width:435px;
+}
+.red-paint {
+    height: 300px;
+    width: 435;
+    background-color:red;
+    margin: 30px 0 30px 30px;
+}
+
+.blue-paint{
+    height: 300px;
+    width: 435;
+    background-color:blue;
+    margin: 30px 0 30px 30px;
+}
+
+/*
+page = lm + lb + lb + content + rb + rb + rm + remainder
+
+*/
+
+.black-paint{
+    height: 50px;
+    width: 900px;
+    background-color:black;
+    margin: 0 0 30px 30px;
+}
+
+
 
 
 /*CLEAR FIX SOLLUTION*/
